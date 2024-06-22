@@ -38,16 +38,18 @@ public class Main {
         devLoan.inscreverBootcamp(bootcamp);
         devLoan.progredir();
         devLoan.progredir();
-        System.out.println("conteudos incritos: " + devLoan.getConteudosIncritos());
-        System.out.println("conteudos concluidos: " + devLoan.getConteudosConcluidos());
+        System.out.println(devLoan.getNome());
+        devLoan.exibirConteudos();
         System.out.println("XP: " + devLoan.calcularTotalXp());
 
         Dev devRenato = new Dev();
         devRenato.setNome("Renato");
         devRenato.inscreverBootcamp(bootcamp);
         devRenato.progredir();
-        System.out.println("Conteudos inscritos: " + devRenato.getConteudosIncritos());
-        System.out.println("conteudos concluidos: " + devRenato.getConteudosConcluidos());
+        System.out.println(devRenato.getNome());
+        devRenato.exibirConteudos();
         System.out.println("XP: " + devRenato.calcularTotalXp());
+
+        
     }
 }

@@ -28,6 +28,11 @@ public class Dev {
         return this.conteudosConcluidos.stream().mapToDouble(conteudo -> conteudo.calcularXp()).sum();
     }
 
+    public void exibirConteudos(){
+        System.out.println("Conteudos inscritos: " + conteudosIncritos);
+        System.out.println("conteudos concluidos: " + conteudosConcluidos);
+    }
+
     //Gets e Sets
 
     public String getNome() {
